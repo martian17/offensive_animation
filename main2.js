@@ -23,7 +23,7 @@ class Rcanvas extends ELEM{
 
 class ConfederateCross{
     slope = 1.62;
-    forkState = 0;
+    forkstate = 0;
     constructor(container,rx,ry,rvx,rvy,rw){
         this.rx  = rx;
         this.ry  = ry;
@@ -36,7 +36,10 @@ class ConfederateCross{
         this.rx += thix.rvx*dt*(rw*10);
         this.ry += this.rvy*dt*(rw*10);//velocity proportional to banner size to prevent locking
         this.rw *= 1+dt/2;
-        if(!this.passed && ){
+        if(this.forkstate === 0){
+            
+        }
+        if(this.forkstate !== 2 && ){
 
         }
         if(this.isOutofScreen()){
